@@ -6,16 +6,23 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
     header, footer { background-color: #222; color: #fff; padding: 10px 20px; text-align: center; }
-    .content { padding: 20px; text-align: center; }
-    a.button {
-      background-color: #008CBA;
+    /* Global button style */
+    .btn {
+      background-color: #007BFF;
+      border: none;
       color: #fff;
       padding: 10px 20px;
+      text-align: center;
       text-decoration: none;
-      border-radius: 4px;
-      margin: 10px;
       display: inline-block;
+      font-size: 16px;
+      border-radius: 12px;
+      transition: background-color 0.3s ease;
     }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .content { padding: 20px; text-align: center; }
     img { max-width: 100%; height: auto; border-radius: 8px; }
   </style>
 </head>
@@ -29,9 +36,9 @@
     <p>
       Опис альбому: Camp Here &amp; There (Extended OST) – це розширена версія саундтреку, що занурює слухачів у атмосферу пригод і глибоких емоцій. Альбом відзначається різноманітністю композицій та оригінальним звучанням.
     </p>
-    <a class="button" href="https://example.com/external-link" target="_blank">Перейти до альбому</a>
+    <a class="btn" href="https://example.com/external-link" target="_blank">Перейти до альбому</a>
     <br>
-    <a class="button" href="index.html">Повернутися на головну</a>
+    <a class="btn" href="index.html">Повернутися на головну</a>
   </div>
   <footer>
     <p>&copy; 2025 TheNewNormal</p>
