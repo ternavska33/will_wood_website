@@ -6,21 +6,28 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
     header, footer { background-color: #222; color: #fff; padding: 10px 20px; text-align: center; }
+    /* Global button style */
+    .btn {
+      background-color: #007BFF;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 12px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
     .content { padding: 20px; }
     form { max-width: 600px; margin: 0 auto; }
     input, textarea {
       width: 100%;
       padding: 10px;
       margin: 10px 0;
-    }
-    a.button, button {
-      background-color: #008CBA;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
     }
   </style>
 </head>
@@ -35,10 +42,10 @@
       <input type="text" name="name" placeholder="Ваше ім'я" required>
       <input type="email" name="email" placeholder="Ваш email" required>
       <textarea name="message" rows="5" placeholder="Ваше повідомлення" required></textarea>
-      <button type="submit">Відправити</button>
+      <button type="submit" class="btn">Відправити</button>
     </form>
     <br>
-    <a class="button" href="index.html">Повернутися на головну</a>
+    <a class="btn" href="index.html">Повернутися на головну</a>
   </div>
   <footer>
     <p>&copy; 2025 TheNewNormal</p>
