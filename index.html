@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>TheNewNormal</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    nav {
+      background-color: #222;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .section {
+      padding: 60px 20px;
+    }
+    /* Block 1: Header with background image */
+    .header-section {
+      height: 100vh;
+      background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 48px;
+      font-weight: bold;
+    }
+    /* Block 2: About Will Wood with light background */
+    .about-section {
+      background-color: #f0f0f0;
+      color: #000;
+      text-align: center;
+    }
+    .about-section img {
+      max-width: 300px;
+      border-radius: 8px;
+    }
+    /* Block 3: Albums with dark background */
+    .albums-section {
+      background-color: #333;
+      color: #fff;
+    }
+    .albums-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .album-item {
+      background: #444;
+      padding: 20px;
+      border-radius: 8px;
+      width: 280px;
+      text-align: center;
+    }
+    .album-item a {
+      background-color: #008CBA;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="about.html">Про Will Wood</a>
+    <a href="#albums">Albums</a>
+    <a href="contact.html">Контакт</a>
+  </nav>
+
+  <!-- Block 1: Site name with background image -->
+  <section class="header-section">
+    <div>TheNewNormal</div>
+  </section>
+
+  <!-- Block 2: About Will Wood -->
+  <section class="section about-section" id="about">
+    <h2>Про Will Wood</h2>
+    <img src="https://via.placeholder.com/300" alt="Will Wood">
+    <p>Will Wood – американський музикант та співач-сонграйтер. Його творчість вражає оригінальні композиції та глибокий зміст.</p>
+    <a href="about.html">Читати далі</a>
+  </section>
+
+  <!-- Block 3: Albums -->
+  <section class="section albums-section" id="albums">
+    <h2>Albums</h2>
+    <div class="albums-list">
+      <div class="album-item">
+        <h3>Camp Here &amp; There (Extended OST)</h3>
+        <p>Release Date: February 20, 2025</p>
+        <a href="album-camp.html" target="_blank">Переглянути</a>
+      </div>
+      <div class="album-item">
+        <h3>The New Normal! (The Normal Album 2024 Edit)</h3>
+        <p>Release Date: August 9, 2024</p>
+        <a href="album-newnormal.html" target="_blank">Переглянути</a>
+      </div>
+      <div class="album-item">
+        <h3>IN CASE I DIE (Live)</h3>
+        <p>Release Date: January 13, 2023</p>
+        <a href="album-incausedie.html" target="_blank">Переглянути</a>
+      </div>
+      <div class="album-item">
+        <h3>“In case I make it,”</h3>
+        <p>Release Date: July 29, 2022</p>
+        <a href="album-incasemakeit.html" target="_blank">Переглянути</a>
+      </div>
+      <div class="album-item">
+        <h3>Here &amp; There Soundtrack: Campfire Songs Edition</h3>
+        <p>Release Date: April 8, 2022</p>
+        <a href="album-campfiresongs.html" target="_blank">Переглянути</a>
+      </div>
+      <div class="album-item">
+        <h3>Camp Here &amp; There (Original Series Soundtrack)</h3>
+        <p>Release Date: May 8, 2021</p>
+        <a href="album-originalseries.html" target="_blank">Переглянути</a>
+      </div>
+      <div class="album-item">
+        <h3>The Normal Album</h3>
+        <p>Release Date: July 10, 2020</p>
+        <a href="album-normal.html" target="_blank">Переглянути</a>
+      </div>
+      <div class="album-item">
+        <h3>Alma Mater</h3>
+        <p>Release Date: May 10, 2020</p>
+        <a href="album-almamater.html" target="_blank">Переглянути</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TheNewNormal</p>
+  </footer>
+</body>
+</html>
