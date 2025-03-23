@@ -52,10 +52,12 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(128, 128, 128, 0.5); /* grey overlay */
+      background-color: rgba(0, 0, 0, 0.7); /* darker overlay */
+      z-index: 1;
     }
     .header-text {
-      position: relative; /* ensures text is above the overlay */
+      position: relative;
+      z-index: 2; /* ensures text is above the overlay */
       color: #fff;
       font-size: 48px;
       font-weight: bold;
@@ -108,9 +110,8 @@
       color: #fff;
     }
     .albums-section h2 {
-    text-align: center;
+      text-align: center;
     }
-
   </style>
 </head>
 <body>
@@ -120,7 +121,7 @@
     <a href="contact.html">Контакт</a>
   </nav>
 
-  <!-- Block 1: Header with background image, grey overlay, and welcome text -->
+  <!-- Block 1: Header with background image, darker overlay, and welcome text -->
   <section class="header-section">
     <div class="header-text">
       TheNewNormal<br>
