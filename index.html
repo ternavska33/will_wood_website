@@ -17,29 +17,65 @@
       color: #fff;
       text-decoration: none;
     }
+    /* Global button style */
+    .btn {
+      background-color: #007BFF;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 12px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
     .section {
       padding: 60px 20px;
     }
-    /* Block 1: Header with background image */
+    /* Block 1: Header with background image and overlay */
     .header-section {
       height: 100vh;
       background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .header-section::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(128, 128, 128, 0.5); /* grey overlay */
+    }
+    .header-text {
+      position: relative; /* ensures text is above the overlay */
       color: #fff;
       font-size: 48px;
       font-weight: bold;
+      text-align: center;
     }
     /* Block 2: About Will Wood with light background */
     .about-section {
       background-color: #f0f0f0;
       color: #000;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .about-section img {
       max-width: 300px;
       border-radius: 8px;
+    }
+    .about-section .btn {
+      margin-top: auto;
     }
     /* Block 3: Albums with dark background */
     .albums-section {
@@ -58,14 +94,12 @@
       padding: 20px;
       border-radius: 8px;
       width: 280px;
+      display: flex;
+      flex-direction: column;
       text-align: center;
     }
-    .album-item a {
-      background-color: #008CBA;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 4px;
+    .album-item a.btn {
+      margin-top: auto;
     }
     footer {
       text-align: center;
@@ -78,13 +112,15 @@
 <body>
   <nav>
     <a href="about.html">Про Will Wood</a>
-    <a href="#albums">Albums</a>
+    <a href="#albums">Альбоми</a>
     <a href="contact.html">Контакт</a>
   </nav>
 
-  <!-- Block 1: Site name with background image -->
+  <!-- Block 1: Header with background image, grey overlay, and welcome text -->
   <section class="header-section">
-    <div>TheNewNormal</div>
+    <div class="header-text">
+      Ласкаво просимо до TheNewNormal - фан-сторінки Віл Вуда
+    </div>
   </section>
 
   <!-- Block 2: About Will Wood -->
@@ -92,52 +128,52 @@
     <h2>Про Will Wood</h2>
     <img src="https://via.placeholder.com/300" alt="Will Wood">
     <p>Will Wood – американський музикант та співач-сонграйтер. Його творчість вражає оригінальні композиції та глибокий зміст.</p>
-    <a href="about.html">Читати далі</a>
+    <a href="about.html" class="btn">Читати далі</a>
   </section>
 
   <!-- Block 3: Albums -->
   <section class="section albums-section" id="albums">
-    <h2>Albums</h2>
+    <h2>Альбоми</h2>
     <div class="albums-list">
       <div class="album-item">
         <h3>Camp Here &amp; There (Extended OST)</h3>
         <p>Release Date: February 20, 2025</p>
-        <a href="album-camp.html" target="_blank">Переглянути</a>
+        <a href="album-camp.html" target="_blank" class="btn">Переглянути</a>
       </div>
       <div class="album-item">
         <h3>The New Normal! (The Normal Album 2024 Edit)</h3>
         <p>Release Date: August 9, 2024</p>
-        <a href="album-newnormal.html" target="_blank">Переглянути</a>
+        <a href="album-newnormal.html" target="_blank" class="btn">Переглянути</a>
       </div>
       <div class="album-item">
         <h3>IN CASE I DIE (Live)</h3>
         <p>Release Date: January 13, 2023</p>
-        <a href="album-incausedie.html" target="_blank">Переглянути</a>
+        <a href="album-incausedie.html" target="_blank" class="btn">Переглянути</a>
       </div>
       <div class="album-item">
         <h3>“In case I make it,”</h3>
         <p>Release Date: July 29, 2022</p>
-        <a href="album-incasemakeit.html" target="_blank">Переглянути</a>
+        <a href="album-incasemakeit.html" target="_blank" class="btn">Переглянути</a>
       </div>
       <div class="album-item">
         <h3>Here &amp; There Soundtrack: Campfire Songs Edition</h3>
         <p>Release Date: April 8, 2022</p>
-        <a href="album-campfiresongs.html" target="_blank">Переглянути</a>
+        <a href="album-campfiresongs.html" target="_blank" class="btn">Переглянути</a>
       </div>
       <div class="album-item">
         <h3>Camp Here &amp; There (Original Series Soundtrack)</h3>
         <p>Release Date: May 8, 2021</p>
-        <a href="album-originalseries.html" target="_blank">Переглянути</a>
+        <a href="album-originalseries.html" target="_blank" class="btn">Переглянути</a>
       </div>
       <div class="album-item">
         <h3>The Normal Album</h3>
         <p>Release Date: July 10, 2020</p>
-        <a href="album-normal.html" target="_blank">Переглянути</a>
+        <a href="album-normal.html" target="_blank" class="btn">Переглянути</a>
       </div>
       <div class="album-item">
         <h3>Alma Mater</h3>
         <p>Release Date: May 10, 2020</p>
-        <a href="album-almamater.html" target="_blank">Переглянути</a>
+        <a href="album-almamater.html" target="_blank" class="btn">Переглянути</a>
       </div>
     </div>
   </section>
